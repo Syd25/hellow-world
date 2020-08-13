@@ -22,11 +22,12 @@
        <link href="https://fopnts.googleapis.com/css?family=Oxygen:400,300,700" rel='stylesheet' type='text/css'>
 
        <link href="https://fonts.google.com/specimen/Acme">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"/>
     
 </head>
  <style>
   #home{
-      height: 150vh;
+     /* height: 150vh;*/
       width: 100%;
   
     }
@@ -61,9 +62,13 @@
             margin-top: 30px;
             padding:0;
             box-shadow: 0 0 50px #3F0C1F;
-            border:2px solid #3F0C1F;
+            border:2px solid #3F0C1F;}
+
+            .aside{
+                font-size:x-small;
+            }
          }
-      }
+      
   .city {
   background-color: tomato;
   color: white;
@@ -112,7 +117,7 @@ html {
 }
 
 .menu li:hover {
-  background-color: #;
+  background-color: black;
 }
 
 .aside {
@@ -302,7 +307,7 @@ html {
 
       text-decoration: none;
       letter-spacing: 2px;
-      color: #000-;
+      /*color: #000-;*/
       font-size: 20px;
       font-weight: bolder;
       position: relative;
@@ -381,6 +386,115 @@ html {
       transform: translateX(-50%) scaleX(1);
     }
 
+    /*ADDED CONTENT*/ 
+    
+    @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+    
+  
+
+
+
+.faq{
+    width: 95%;
+    padding: 0 5px;
+    border: 1.5px solid #1e5994;
+    cursor: pointer;
+    display: flex;
+    margin: 10px 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 35px;
+    
+}
+
+.faq i {
+    color: #6db5ff;
+    transition: all .5s ease-in;
+}
+.faq .fa-minus{
+    display: none;
+}
+.active, .faq:hover{
+    background-color: #6db5ff;
+    color: white;
+    transition: all .5s ease-in;
+    border: 2px solid #dddddd;
+}
+.active .fa-minus{
+    display: block;
+}
+.active .fa-plus{
+    display: none;
+}
+.faq h4{
+    font-size: 20px;
+    margin: 0;
+    color: #001733;
+    padding-left: 5px;
+}
+.active i, .active h4 , .faq:hover i , .faq:hover h4{
+    color: white;
+}
+.contentfaq{
+    padding: 0 15px;
+    border-left: 1px solid #9eb6cf;
+    border-right: 1px solid #9eb6cf;
+    margin-left: 25px;
+    font-size: 14px;
+    text-align: justify;
+    overflow: hidden;
+    transition: all .7s ease-out;
+    max-height: 0;
+}
+
+
+
+
+#faq{
+    margin-left: 20px;
+    margin-right: 20px;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  #faq .container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 15px;
+  }
+  
+
+  
+  .faq-row{
+    grid-column-start: 1;
+  }
+  
+  
+ 
+  
+  
+  .faq-row p{
+    font-size: 14px;
+    color: #34384D;
+    line-height: 1.5;
+    padding-left: 10px;
+    padding-bottom: 10px;
+  }
+
+  #home a:hover{
+      color:brown;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-decoration: lightseagreen;
+  }
+  
+  
+ 
+
+  
+
+
 
 
 
@@ -402,6 +516,9 @@ html {
             <a class="dropdown-item" href="#">Practice Papers</a>
             <a class="dropdown-item" href="#">Previous Papers</a>
             </div>
+
+
+
        </li>
        <li><a href="#aboutus">About</a></li>
        <li><a href="#menu">Services</a></li>       
@@ -433,99 +550,121 @@ html {
 </div>
            <div id="main-content" class="container">
                                <div class="jumbotron">
-                                  <img src="faq.png" alt="bg" class="img-responsive">
+                                  <img style="background-size: cover;background-position: center;height:100%;width:100%" src="https://www.ptaindia.com/wp-content/uploads/2018/10/icon-FAQ-500px.png" alt="bg" class="img-responsive">
                                </div>
                 </div>
+
+
+                <!--------------MAIN SECTION-->
+
+
+                <div class="container">
  <section id="home">
   <div class="header">
-  <h1>Common Questions asked</h1>
+  <h1 style="text-align:center;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Common Questions asked</h1>
   </div>
+
+  <div class="container">
 
 <div class="row">
   <div class="col-3 menu">
     <ul>
-    <li><a href="#">Notes</a></li>
-    <li><a href="#">Videos</a></li>
-    <li><a href="#">Questions</a></li>
-    <li><a href="#">Practice Papers</a></li>
+    <li><a style="text-decoration: none;color:white;" href="#">Notes</a></li>
+    <li><a style="text-decoration: none;color:white;"  href="#">Videos</a></li>
+    <li><a style="text-decoration: none;color:white;"  href="#">Questions</a></li>
+    <li><a style="text-decoration: none;color:white;"  href="#">Practice Papers</a></li>
+  <li style="background-color:orange;" class="aside">
+        <!--<div class="aside">-->
+          <h1  style="text-align:center;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;font-size:2vw"><u>Frequently asked Questions</u></h1>
+          <h2 style="font-size:2vw;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"><b>What is NotesPick?</b></h2>
+          <p style="font-size:1.5vw;">It's a platform to access notes of different courses.</p>
+          <h2 style="font-size:2vw;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"><b>Is it a Trusted website?</b></h2>
+          <p style="font-size:1.5vw;">Yes</p>
+          <h2 style="font-size:2vw;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"><b>How to visit recent articles?</b></h2>
+          <p style="font-size:1.5vw;"><a href="https://notespickup.com/article/meran/index.html">click here</a></p>
+        
+  </li>
+   
+
     </ul>
+
+   
+   
   </div>
 
   <div class="col-6">
     <h1>Notes Pickup</h1>
-    <div class="container mt-3">
-      <div class="dropdown">
-       <button type="button" class="btn btn-outline-primary dropdown-toggle" data-toggle="dropdown">
-          +Is my college enlisted on your website?
-       </button>
 
-       <div class="dropdown-menu">
-       <p>Notes pick up is a website which is expanding its reach to all the colleges and universities. The notes section provides the notes in a proper manner and is categorized based on the universities. However, if a particular college is not listed, then we are sorry for the inconvenience. We are trying our best to cover all the colleges in the shortest time possible.</p>
-       </div>
-      </div>
-      <div class="dropdown">
-       <button type="button" class="btn btn-outline-primary dropdown-toggle" data-toggle="dropdown">
-          +What if my college is not available in your list, can I still access notes for my respective courses?
-       </button>
+   
+        
+        <div class="faq">
+            <h4>Is my college enlisted on your website?</h4>
+            <i class="fas fa-minus"></i>
+            <i class="fas fa-plus"></i>
+        </div>
+        <div class="contentfaq">
+            <p>Notes pick up is a website which is expanding its reach to all the colleges and universities. The notes section provides the notes in a proper manner and is categorized based on the universities. However, if a particular college is not listed, then we are sorry for the inconvenience. We are trying our best to cover all the colleges in the shortest time possible.</p>
+        </div>
 
-       <div class="dropdown-menu">
-       <p>Definitely you can still have access to the notes. To access and further download the content of your choice: Select 'Others' from the drop-down list box from the tab titled 'College'. Manually enter the specific course title. Therein, you would be provided with the study materials required.</p>
-       </div>
-      </div>
-      <div class="dropdown">
-       <button type="button" class="btn btn-outline-primary dropdown-toggle" data-toggle="dropdown">
-          +I'm seeking to work as an intern with Notes pickup, how shall I apply?
-       </button>
+        <div class="faq">
+            <h4>What if my college is not available in your list, can I still access notes for my respective courses?</h4>
+            <i class="fas fa-minus"></i>
+            <i class="fas fa-plus"></i>
+        </div>
+        <div class="contentfaq">
+            <p>Definitely you can still have access to the notes. To access and further download the content of your choice: Select 'Others' from the drop-down list box from the tab titled 'College'. Manually enter the specific course title. Therein, you would be provided with the study materials required.</p>
+        </div>
 
-       <div class="dropdown-menu">
-       <p>It will be an honour making you a part of this fruitful family. If you are looking forward to working with us, we respect your decision. You can submit your CV on our given Email address: contact@notespickup.com We shall get in touch with you as soon as possible.</p>
-       </div>
-      </div>
-      <div class="dropdown">
-       <button type="button" class="btn btn-outline-primary dropdown-toggle" data-toggle="dropdown">
-          +How can I suggest changes to the existing notes?
-       </button>
+        <div class="faq">
+            <h4> I'm seeking to work as an intern with Notes pickup, how shall I apply?</h4>
+            <i class="fas fa-minus"></i>
+            <i class="fas fa-plus"></i>
+        </div>
+        <div class="contentfaq">
+            <p>It will be an honour making you a part of this fruitful family. If you are looking forward to working with us, we respect your decision. You can submit your CV on our given Email address: contact@notespickup.com We shall get in touch with you as soon as possible.</p>
+        </div>
 
-       <div class="dropdown-menu">
-       <p>NNotes Pickup encourages contributions from its learners and wholeheartedly accepts the valuable suggestions thus made. Users are recommended to suggest changes in the content, via contact@notespickup.com.
-       Our expert team will look through the suggested edits and make necessary changes within a short span of time.</p>
-       </div>
-      </div>
-      <div class="dropdown">
-       <button type="button" class="btn btn-outline-primary dropdown-toggle" data-toggle="dropdown">
-          +How am I supposed to report any misleading information on the website?
-       </button>
+        <div class="faq">
+            <h4> How can I suggest changes to the existing notes?</h4>
+            <i class="fas fa-minus"></i>
+            <i class="fas fa-plus"></i>
+        </div>
+        <div class="contentfaq">
+            <p>Notes Pickup encourages contributions from its learners and wholeheartedly accepts the valuable suggestions thus made. Users are recommended to suggest changes in the content, via contact@notespickup.com.
+                Our expert team will look through the suggested edits and make necessary changes within a short span of time.</p>
+        </div>
 
-       <div class="dropdown-menu">
-       <p>Notes Pickup provides top quality notes, developed by a group of experts. However, user feedback is highly appreciated and customers are permitted to report any sort of misleading information found on the website. It is expected to be sent through contact@notespickup.com. This must be done so that our expert group can analyse the same and make essential corrections.</p>
-       </div>
-      </div>
-      <div class="dropdown">
-       <button type="button" class="btn btn-outline-primary dropdown-toggle" data-toggle="dropdown">
-          +How do I report a technical issue?
-       </button>
+        <div class="faq">
+            <h4>How am I supposed to report any misleading information on the website?</h4>
+            <i class="fas fa-minus"></i>
+            <i class="fas fa-plus"></i>
+        </div>
+        <div class="contentfaq">
+            <p>Notes Pickup provides top quality notes, developed by a group of experts. However, user feedback is highly appreciated and customers are permitted to report any sort of misleading information found on the website. It is expected to be sent through contact@notespickup.com. This must be done so that our expert group can analyse the same and make essential corrections.</p>
+        </div>
 
-       <div class="dropdown-menu">
-       <p>We have worked hard for this website for your experience to be smooth and relying.
-          We update our website from time to time in order to nullify any possible technical issues. However, if you still face any trouble you may contact via contact@notespickup.com or call us at 9927468766. We will be happy to resolve any possible situations.</p>
-       </div>
-      </div>
+        <div class="faq">
+            <h4>How do I report a technical issue?</h4>
+            <i class="fas fa-minus"></i>
+            <i class="fas fa-plus"></i>
+        </div>
+        <div class="contentfaq">
+            <p>>We have worked hard for this website for your experience to be smooth and relying.
+                We update our website from time to time in order to nullify any possible technical issues. However, if you still face any trouble you may contact via contact@notespickup.com or call us at 9927468766. We will be happy to resolve any possible situations.</p>
+        </div>
+
+        
     </div>
+   
   </div>
 </div>
-  <div class="col-3 right">
-    <div class="aside">
-      <h1>Frequently asked Questions</h1>
-      <h2>What is NotesPick?</h2>
-      <p>It's a platform to access notes of different courses.</p>
-      <h2>Is it a Trusted website?</h2>
-      <p>yes</p>
-      <h2>How to visit recent articles?</h2>
-      <p><a href="https://notespickup.com/article/meran/index.html">click here</a></p>
-    </div>
-  </div>
+  
 </div>
+
+
 </section>
+
+</div>
 
   <section id="footer">
     <div>
@@ -562,3 +701,26 @@ html {
       © Copyright 2020. All Rights Reserved.
     </div>
   </section>
+
+  </body>
+
+  <script>
+
+var faq = document.getElementsByClassName('faq');
+
+var i;
+var len = faq.length;
+for(i = 0; i<len; i++){
+    faq[i].addEventListener('click', function(){
+        this.classList.toggle('active');
+        var contentfaq = this.nextElementSibling;
+        if(contentfaq.style.maxHeight){
+            contentfaq.style.maxHeight = null;
+        }else{
+            contentfaq.style.maxHeight = contentfaq.scrollHeight + 'px';
+        }
+    })
+}
+  </script>
+
+  </html>
